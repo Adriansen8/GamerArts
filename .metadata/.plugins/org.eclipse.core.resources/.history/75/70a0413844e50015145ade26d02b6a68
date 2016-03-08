@@ -1,0 +1,40 @@
+body {
+  min-height: 2000px;
+}
+
+.navbar-static-top {
+  margin-top: 50px;
+  margin-bottom: 19px;
+}
+
+.menus_seleccionados{
+	
+	min-height: 50px;
+	
+}
+
+.navbar-static-top li:hover {
+ -webkit-animation: mymove 1s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 1s;
+    -webkit-animation-iteration-count: 1;  /* Chrome, Safari, Opera */
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode:forwards;
+  	 animation-fill-mode: forwards;
+}  
+
+@-webkit-keyframes mymove {
+    from {background: red;}
+    to {background: blue;}
+}
+
+@keyframes mymove {
+    from {background: red;}
+    to {background: blue;}
+}
+    
+#myDIV {
+    width: 300px;
+    height: 200px;
+    background: red;
+   
+}
