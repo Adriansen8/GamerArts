@@ -3,6 +3,8 @@
 */
 $(document).ready(function(){
 
-
-
+	$("#boton_desaparecer").click(function(){
+		$("#paginaContainer").hide();
+	});
+	
 });
