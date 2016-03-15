@@ -5,6 +5,8 @@ body {
 .navbar-static-top {
   margin-top: 0px;
   margin-bottom: 19px;
+  
+  
 }
 
 .menus_seleccionados{
@@ -18,9 +20,38 @@ body {
     padding: 15px;
 }
 
+#navegacion{
+
+}
+
 div #login{
     float: right;
 }
+
+.navbar-static-top{
+  opacity: 10;
+  background-color: transparent;
+  color: red;
+}
+
+body{
+	background-image: url("../imagenes/back.jpg");
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+}
+
+#paginaContainer {
+	min-height: 2000px;
+	
+
+	
+}
+
+body{
+	
+	
+} 
 
 div.login > .form-inline > .form-group{
   width: 100%;
@@ -42,31 +73,31 @@ div.login > .form-inline > .form-group > input{
 }
 
 .navbar-brand{
-	 -webkit-animation: mymove 1s; /* Chrome, Safari, Opera */
-    animation: mymove 1s;
-    -webkit-animation-iteration-count: 1;  /* Chrome, Safari, Opera */
-    animation-iteration-count: 1;
-    -webkit-animation-fill-mode:forwards;
-  	 animation-fill-mode: forwards;
+/* 	 -webkit-animation: mymove 1s; Chrome, Safari, Opera */
+/*     animation: mymove 1s; */
+/*     -webkit-animation-iteration-count: 1;  Chrome, Safari, Opera */
+/*     animation-iteration-count: 1; */
+/*     -webkit-animation-fill-mode:forwards; */
+/*   	 animation-fill-mode: forwards; */
 }
 
 .navbar-default .navbar-nav > .active > a{
 	border-top:10px;
-	 -webkit-animation: mymove 1s; /* Chrome, Safari, Opera */
-    animation: mymove 1s;
-    -webkit-animation-iteration-count: 1;  /* Chrome, Safari, Opera */
-    animation-iteration-count: 1;
-    -webkit-animation-fill-mode:forwards;
-  	 animation-fill-mode: forwards;
+/* 	 -webkit-animation: mymove 1s; Chrome, Safari, Opera */
+/*     animation: mymove 1s; */
+/*     -webkit-animation-iteration-count: 1;  Chrome, Safari, Opera */
+/*     animation-iteration-count: 1; */
+/*     -webkit-animation-fill-mode:forwards; */
+/*   	 animation-fill-mode: forwards; */
 }
 
 .navbar-static-top ul li {
- -webkit-animation: mymove 1s; /* Chrome, Safari, Opera */
-    animation: mymove 1s;
-    -webkit-animation-iteration-count: 1;  /* Chrome, Safari, Opera */
-    animation-iteration-count: 1;
-    -webkit-animation-fill-mode:forwards;
-  	 animation-fill-mode: forwards;
+/*  -webkit-animation: mymove 1s; Chrome, Safari, Opera */
+/*     animation: mymove 1s; */
+/*     -webkit-animation-iteration-count: 1;  Chrome, Safari, Opera */
+/*     animation-iteration-count: 1; */
+/*     -webkit-animation-fill-mode:forwards; */
+/*   	 animation-fill-mode: forwards; */
 }  
 
 @-webkit-keyframes mymove {
