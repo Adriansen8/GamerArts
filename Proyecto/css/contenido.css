@@ -2,18 +2,8 @@ body {
   min-height: 2000px;
 }
 
-.navbar-static-top {
-  margin-top: 0px;
-  margin-bottom: 19px;
-  
-  
-}
 
-.menus_seleccionados{
-	
-	min-height: 50px;
-	
-}
+
 
 .modal-header{
     border-color: transparent;
@@ -24,28 +14,30 @@ body {
 
 }
 
+html { 
+
+}
+
+
 div #login{
     float: right;
 }
 
-.navbar-static-top{
-  opacity: 10;
-  background-color: transparent;
-  color: red;
-}
+
+
 
 body{
-	background-image: url("../imagenes/back.jpg");
-	background-repeat: no-repeat;
+  background: url("../imagenes/back.jpg") no-repeat fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	height: 100%;
 	width: 100%;
 }
 
 #paginaContainer {
 	min-height: 2000px;
-	
-
-	
 }
 
 body{
@@ -53,17 +45,28 @@ body{
 	
 } 
 
-div.login > .form-inline > .form-group{
+#containerPopover .popover{
+	max-width: none
+}
+	
+
+div.divLogin{
+	width: 25%;
+	
+}
+
+
+div.divLogin > .form-inline > .form-group{
   width: 100%;
   margin-bottom: 10px;
 }
 
-div.login > .form-inline > .form-group > label{
+div.divLogin > .form-inline > .form-group > label{
   width: 25%;
 
 }
 
-div.login > .form-inline > .form-group > input{
+div.divLogin > .form-inline > .form-group > input{
   width: 70%;
  
 }

@@ -1,0 +1,24 @@
+
+
+	function fijarMenuSuperior(){
+		var altura = $('.navbar-static-top').offset().top;
+		$(window).on('scroll',function(){
+			if($(window).scrollTop() > altura ){
+				$('.navbar').addClass('menu-fixed');
+			}else{
+				$('.navbar').removeClass('menu-fixed');
+			}
+		}); 
+	}
+	
+	function fijarPopover(){
+		$("#loginPopover").popover({
+		    html : true, 
+		    content: function() {
+		      return $('#divLoginPopover').html();
+		    },
+		    animation: true,
+		   
+		});
+	}
+

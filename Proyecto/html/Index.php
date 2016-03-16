@@ -10,18 +10,48 @@
     <title>prueba bootstrap</title>
     
     
-	   <!-- HOJAS DE ESTILO -->
-    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
-	  <link href="http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700" rel="stylesheet" type="text/css">
-    <link href="../css/navbar-static-top.css" rel="stylesheet">
-	   <!-- SCRIPTS -->
+    <!-- BOOTSTRAP -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700" rel="stylesheet" type="text/css"/>
     <script src="../bootstrap/js/jquery-2.2.1.min.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
+    
+	   <!-- HOJAS DE ESTILO -->
+
+    <link href="../css/contenido.css" rel="stylesheet"/>
+    <link href="../css/menu_Superior.css" rel="stylesheet"/>
+    <link href="../css/login.css" rel="stylesheet"/>
+	   <!-- SCRIPTS -->
+
     <script src="../js/presentacion.js"></script>
+
+
+
+    <script >
+    $(document).ready(function(){
+
+    	fijarMenuSuperior();
+		generarPopover();
+		
+		
+     
+    });
+
+	function cerrarPopover(){
+
+		
+			alert($('#loginPopover').attr('aria-describedby'));
+		
+	}
+    
+
+    </script>
+
+
+
   </head>
 <body>
     <div id="paginaContainer">
-    <img id="bg" src="../imagenes/back.jpg" />
       <div class="menus_seleccionados">
       </div>
       <div id="navegacion">
@@ -56,7 +86,12 @@
               </ul>
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="../navbar/">Default</a></li>
-                <li class="active"><a href="./"> <img src="../imagenes/img-user.png" alt="Usuario" height="18" width="18"> <span class="sr-only">(current)</span></a></li>
+                <li class="active">
+                	<a href="#" id="loginPopover" data-toggle="popover" data-html="true" data-placement="bottom">
+                		<img src="../imagenes/img-user.png" alt="Usuario" height="18" width="18"> 
+                		<span class="sr-only">(current)</span>
+                	</a>
+                </li>
                 <li><a href="../navbar-fixed-top/">Fixed top</a></li>
               </ul>
             </div><!--/.nav-collapse -->
@@ -68,39 +103,25 @@
       <button type="button" id="boton_desaparecer" class="btn btn-default">Boton para desaparecer el mundo</button>
       </div>
 
-      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-
-  <!-- Modal -->
-      <div class="modal fade" id="myModal" role="dialog">
-        <div id="login"  class="modal-dialog">
-        
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Login</h4>
-            </div>
-            <div class="modal-body login">
-                <form class="form-inline" role="form">
-                  <div class="form-group">
-                    <label class="login" for="UsuarioInput">Usuario</label>
-                    <input class="login form-control has-feedback" id="UsuarioInput" type="text">
-                  </div>
-                  <div class="form-group">
-                    <label class="login" for="PassInput">Contraseña</label>
-                    <input class="login form-control has-feedback" id="PassInput" type="text" value="Click to focus...">
-                  </div>
-                </form>
-            </div>
-            <div class="modal-footer">
+	<div id="divLoginPopover" style="display: none">
+		<div id="Login">
+		<form class="form-inline" role="form" >
+	        <div class="form-group">
+	          <label class="login" for="UsuarioInput">Usuario</label>
+	          <input class="login form-control has-feedback" id="UsuarioInput" size="80" type="text"/>
+	        </div>
+	        <div class="form-group">
+	          <label class="login" for="PassInput">Contraseña</label>
+	          <input class="login form-control has-feedback" id="PassInput" size="80" type="text" value="Click to focus...">
+	        </div>
+	        <div class="">
             <button type="button" class="btn btn-success">Loguear</button>
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+            <button id="cerrarPopover" onclick="javascript:cerrarPopover()" data-toggle="popover" type="button" class="btn btn-danger " >Cerrar</button>
             </div>
-          </div>
-          
-        </div>
-      </div>
-
+	    </form>
+	    </div>
+	</div>
+	
     </div>
 
 

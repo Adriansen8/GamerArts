@@ -1,0 +1,10 @@
+@CHARSET "ISO-8859-1";
+
+#Login{
+	width: 200%;
+}
+
+.popover-content{
+	
+	width: 100%;
+}

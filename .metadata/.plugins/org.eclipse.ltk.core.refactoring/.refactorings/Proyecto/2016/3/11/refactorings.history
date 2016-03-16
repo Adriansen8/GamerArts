@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Proyecto/css/navbar-static-top.css&apos; to &apos;contenido.css&apos;" description="Rename resource &apos;navbar-static-top.css&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="css/navbar-static-top.css" name="contenido.css" stamp="1458138015682" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Proyecto/css/menu-superior.css&apos; to &apos;menu_Superior.css&apos;" description="Rename resource &apos;menu-superior.css&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="css/menu-superior.css" name="menu_Superior.css" stamp="1458139347693" updateReferences="true"/>
+</session>
