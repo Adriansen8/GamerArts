@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
   <head>
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
@@ -14,6 +14,7 @@
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
 	<link href="http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700" rel="stylesheet" type="text/css"/>
     <script src="../bootstrap/js/jquery-2.2.1.min.js"></script>
+    <script src="../bootstrap/js/jquery-ui.min.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
     
 	   <!-- HOJAS DE ESTILO -->
@@ -27,22 +28,20 @@
 
 
 
-    <script >
+    <script type="text/javascript">
     $(document).ready(function(){
 
     	fijarMenuSuperior();
-		generarPopover();
-		
-		
-     
+     	cerrarPopover();
+		  generarPopover();
+	    eventoRegistro();
+      eventoInicio()
+		  
     });
 
-	function cerrarPopover(){
 
-		
-			alert($('#loginPopover').attr('aria-describedby'));
-		
-	}
+    
+   
     
 
     </script>
@@ -68,7 +67,7 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active" id="eventoInicio"><a href="#">Inicio</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li class="dropdown">
@@ -85,9 +84,9 @@
                 </li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="../navbar/">Default</a></li>
+                <li><a href="registro.php">Default</a></li>
                 <li class="active">
-                	<a href="#" id="loginPopover" data-toggle="popover" data-html="true" data-placement="bottom">
+                	<a id="loginPopover" data-toggle="popover" data-html="true" data-placement="bottom">
                 		<img src="../imagenes/img-user.png" alt="Usuario" height="18" width="18"> 
                 		<span class="sr-only">(current)</span>
                 	</a>
@@ -99,7 +98,7 @@
         </nav>
       </div>
       
-      <div class="container" role="main">
+      <div id="container" class="container" role="main">
       <button type="button" id="boton_desaparecer" class="btn btn-default">Boton para desaparecer el mundo</button>
       </div>
 
@@ -115,8 +114,8 @@
 	          <input class="login form-control has-feedback" id="PassInput" size="80" type="text" value="Click to focus...">
 	        </div>
 	        <div class="">
-            <button type="button" class="btn btn-success">Loguear</button>
-            <button id="cerrarPopover" onclick="javascript:cerrarPopover()" data-toggle="popover" type="button" class="btn btn-danger " >Cerrar</button>
+            <button type="button" class="btn btn-success margenes-boton-login">Loguear</button>
+            <button  id="registro" data-toggle="popover" type="button" class="btn btn-default margenes-boton-login boton-registro" >Registrarse</button> 
             </div>
 	    </form>
 	    </div>

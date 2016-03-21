@@ -5,3 +5,19 @@
 div .popover {
 	min-width: auto !important;
 }
+
+.margenes-boton-login {
+	margin-top: 10px;
+	margin-right: 10px;
+	
+}
+
+#loginPopover :hover{
+	
+	 cursor:pointer; cursor: hand;
+}
+
+.navbar {
+	
+	background-image: url("../imagenes/fondo_login.png")
+}

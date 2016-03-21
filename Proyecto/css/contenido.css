@@ -2,9 +2,6 @@ body {
   min-height: 2000px;
 }
 
-
-
-
 .modal-header{
     border-color: transparent;
     padding: 15px;
@@ -18,13 +15,9 @@ html {
 
 }
 
-
 div #login{
     float: right;
 }
-
-
-
 
 body{
   background: url("../imagenes/back.jpg") no-repeat fixed; 
@@ -113,7 +106,6 @@ div.divLogin > .form-inline > .form-group > input{
     to {background: blue;}
 }
 
-
 @-webkit-keyframes animacion {
     from {background: black;
     		color:black;   }
@@ -127,7 +119,6 @@ div.divLogin > .form-inline > .form-group > input{
     to {background: blue;
     	color:blue;}
 }
-
     
 #myDIV {
     width: 300px;
@@ -135,3 +126,4 @@ div.divLogin > .form-inline > .form-group > input{
     background: red;
    
 }
+
