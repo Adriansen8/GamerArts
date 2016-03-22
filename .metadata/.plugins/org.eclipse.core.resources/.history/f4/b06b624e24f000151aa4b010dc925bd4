@@ -1,0 +1,7 @@
+@CHARSET "ISO-8859-1";
+
+
+label .col-sm-1{
+	padding-left:0px !important;
+	width: auto !important;
+}

@@ -1,27 +1,33 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="icon" href="../../favicon.ico">
 
     <title>prueba bootstrap</title>
     
     
     <!-- BOOTSTRAP -->
+	
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700">
+	<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">  
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
 	<link href="http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700" rel="stylesheet" type="text/css"/>
     <script src="../bootstrap/js/jquery-2.2.1.min.js"></script>
     <script src="../bootstrap/js/jquery-ui.min.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../css/style.css">
+    
     
 	   <!-- HOJAS DE ESTILO -->
 
     <link href="../css/contenido.css" rel="stylesheet"/>
     <link href="../css/menu_Superior.css" rel="stylesheet"/>
     <link href="../css/login.css" rel="stylesheet"/>
+    <link href="../css/registro.css" rel="stylesheet"/>
 	   <!-- SCRIPTS -->
 
     <script src="../js/presentacion.js"></script>
@@ -73,7 +79,7 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
+                    
                     <li><a href="#">Another action</a></li>
                     <li><a href="#">Something else here</a></li>
                     <li role="separator" class="divider"></li>
