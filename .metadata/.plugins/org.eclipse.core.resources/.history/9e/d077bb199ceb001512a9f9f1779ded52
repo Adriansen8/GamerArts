@@ -1,0 +1,29 @@
+
+
+	function fijarMenuSuperior(){
+		var altura = $('.navbar-static-top').offset().top;
+		$(window).on('scroll',function(){
+			if($(window).scrollTop() > altura ){
+				$('.navbar').addClass('menu-fixed');
+			}else{
+				$('.navbar').removeClass('menu-fixed');
+			}
+		}); 
+	}
+	
+	function generarPopover(){
+		$("#loginPopover").popover({
+		    html : true, 
+		    content: function() {
+		      return $('#divLoginPopover').html();
+		    },
+		    animation: true,
+		   
+		});
+		$(".cerrarPopover").click(function(){
+			alert($('#loginPopover').attr('aria-describedby'));
+			$("[data-toggle='popover']").popover('toggle');
+	    });
+		
+	}
+

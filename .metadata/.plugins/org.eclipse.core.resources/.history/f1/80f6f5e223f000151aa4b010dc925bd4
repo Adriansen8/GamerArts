@@ -1,0 +1,7 @@
+@CHARSET "ISO-8859-1";
+
+
+label .modificacion-formulario{
+	padding-left:0px;
+	width: auto;
+}

@@ -1,0 +1,120 @@
+body {
+  min-height: 2000px;
+}
+
+.navbar-static-top {
+  margin-top: 0px;
+  margin-bottom: 19px;
+  opacity:0.5;
+  
+}
+
+.menus_seleccionados{
+	
+	min-height: 50px;
+	
+}
+
+.modal-header{
+    border-color: transparent;
+    padding: 15px;
+}
+
+div #login{
+    float: right;
+}
+
+
+
+#paginaContainer {
+	min-height: 2000px;
+	background-image: url("../imagenes/back.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	
+}
+
+body{
+	
+	
+} 
+
+div.login > .form-inline > .form-group{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+div.login > .form-inline > .form-group > label{
+  width: 25%;
+
+}
+
+div.login > .form-inline > .form-group > input{
+  width: 70%;
+ 
+}
+
+.modal-footer{
+  
+}
+
+.navbar-brand{
+/* 	 -webkit-animation: mymove 1s; Chrome, Safari, Opera */
+/*     animation: mymove 1s; */
+/*     -webkit-animation-iteration-count: 1;  Chrome, Safari, Opera */
+/*     animation-iteration-count: 1; */
+/*     -webkit-animation-fill-mode:forwards; */
+/*   	 animation-fill-mode: forwards; */
+}
+
+.navbar-default .navbar-nav > .active > a{
+	border-top:10px;
+/* 	 -webkit-animation: mymove 1s; Chrome, Safari, Opera */
+/*     animation: mymove 1s; */
+/*     -webkit-animation-iteration-count: 1;  Chrome, Safari, Opera */
+/*     animation-iteration-count: 1; */
+/*     -webkit-animation-fill-mode:forwards; */
+/*   	 animation-fill-mode: forwards; */
+}
+
+.navbar-static-top ul li {
+/*  -webkit-animation: mymove 1s; Chrome, Safari, Opera */
+/*     animation: mymove 1s; */
+/*     -webkit-animation-iteration-count: 1;  Chrome, Safari, Opera */
+/*     animation-iteration-count: 1; */
+/*     -webkit-animation-fill-mode:forwards; */
+/*   	 animation-fill-mode: forwards; */
+}  
+
+@-webkit-keyframes mymove {
+    from {background: red;}
+    to {background: blue;}
+}
+
+@keyframes mymove {
+    from {background: red;}
+    to {background: blue;}
+}
+
+
+@-webkit-keyframes animacion {
+    from {background: black;
+    		color:black;   }
+    to {background: blue;
+    	color:blue;}
+}
+
+@keyframes animacion {
+     from {background: black;
+    		color:black;   }
+    to {background: blue;
+    	color:blue;}
+}
+
+    
+#myDIV {
+    width: 300px;
+    height: 200px;
+    background: red;
+   
+}

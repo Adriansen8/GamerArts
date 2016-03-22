@@ -1,0 +1,36 @@
+
+
+	function fijarMenuSuperior(){
+		var altura = $('.navbar-static-top').offset().top;
+		$(window).on('scroll',function(){
+			if($(window).scrollTop() > altura ){
+				$('.navbar').addClass('menu-fixed');
+			}else{
+				$('.navbar').removeClass('menu-fixed');
+			}
+		}); 
+	}
+	
+	function generarPopover(){
+		$("#loginPopover").popover({
+		    html : true, 
+		    content: function() {
+		      $('#divLoginPopover').html();
+		    },
+		    animation: true,
+		    complete : function() {
+		        alert('Petición HOLAAA');
+		    }
+		});
+		
+		
+	}
+
+	function cerrarPopover(){
+
+			$('#cerrarPopover').click(function(){
+				alert('hola');
+			});
+		
+	}
+

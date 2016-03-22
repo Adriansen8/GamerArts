@@ -1,0 +1,9 @@
+.col-sm-1{
+	padding-left:0px !important;
+	width: auto !important;
+}
+
+.col-sm-2{
+	padding-left:0px !important;
+	width: auto !important;
+}

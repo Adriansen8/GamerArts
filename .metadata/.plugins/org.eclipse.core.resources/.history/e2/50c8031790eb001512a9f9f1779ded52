@@ -1,0 +1,9 @@
+@CHARSET "ISO-8859-1";
+
+
+
+div .popover {
+max-height: auto;
+max-width: auto;
+	
+}
